@@ -4,7 +4,7 @@ using namespace std;
 void xSwap(int& a, int& b) {
 	a = a ^ b;
 	b = b ^ a;
-	a = a ^ b;
+	a = a ^ b; 
 }
 
 int main() {
