@@ -44,6 +44,13 @@ int main()
    	// to_ulong() returns a long then typecasting it into int
    	cout << num << endl; // 15;
 
+
+   	/* Set one or any particluar bit */
+   	bitset<4> c(string("1010"));
+   	cout << "set: " << endl;
+   	cout << c.set(0) << endl; // 1011
+   	cout << c.set() << endl;  // 1111
+
    	/* Basic Bit Manipulation */
    	bitset<4> a(string("0101"));
    	bitset<4> b(string("1010"));
@@ -53,6 +60,7 @@ int main()
    	cout << (~a) << endl; // 1010
    	cout << (a << 1) << endl; //1010
    	cout << (b << 1) << endl; // 0101
+ 
 
 	return 0;
 }
